@@ -53,6 +53,8 @@ trait Chalk extends js.Object {
 
   def red: this.type = js.native
 
+  def reset: this.type = js.native
+
   def strikethrough: this.type = js.native
 
   def underline: this.type = js.native

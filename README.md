@@ -1,21 +1,27 @@
 Chalk API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [chalk](https://www.npmjs.com/package/chalk)
+[chalk](https://www.npmjs.com/package/chalk) - Terminal string styling done right. Much color.
 
-Terminal string styling done right. Much color.
+### Description
 
-#### Build Dependencies
+[colors.js](https://github.com/scalajs-io/colors) used to be the most popular string styling module, but it has serious deficiencies 
+like extending String.prototype which causes all kinds of problems. Although there are other ones, 
+they either do too much or not enough.
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+**Chalk is a clean and focused alternative.**
+
+### Build Dependencies
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +35,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.npm.chalk._
@@ -73,7 +79,7 @@ console.log(error("Error!"))
 ```
 <span style="color: red; font-weight: bold">Error!</span>
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `Chalk` binding to your project, add the following to your build.sbt:  
 

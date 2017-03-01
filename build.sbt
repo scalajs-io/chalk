@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "1.1.3"
-val scalaJsIOVersion = "0.3.0.5"
+val apiVersion = "1.1.3-2"
+val scalaJsIOVersion = "0.3.0.6"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/chalk"))
@@ -26,7 +26,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
 	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
 	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-	    "io.scalajs" %%% "nodejs" % "7.4.0"
+	    "io.scalajs" %%% "nodejs" % scalaJsIOVersion
   ))
 
 /////////////////////////////////////////////////////////////////////////////////

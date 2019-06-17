@@ -12,7 +12,7 @@ they either do too much or not enough.
 
 ### Build Dependencies
 
-* [SBT v0.13.16](http://www.scala-sbt.org/download.html)
+* [SBT v1.2.x](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
 
@@ -83,7 +83,7 @@ console.log(error("Error!"))
 To add the `Chalk` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "chalk" % "0.4.2"
+libraryDependencies += "io.scalajs.npm" %%% "chalk" % "0.5.0"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
